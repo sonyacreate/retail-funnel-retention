@@ -42,12 +42,12 @@
 - Построена когортная retention-матрица.
 - Учтена разная длина окна наблюдения для новых и зрелых когорт.
 
-### Customer-level SQL analytics
+### SQL-анализ на уровне клиента
 - Собрана таблица заказов на уровне Customer ID + Invoice.
 - Собраны customer-level метрики: количество заказов, total revenue, average order value, first/last purchase.
 - Рассчитана доля клиентов и выручки для one-time/repeat сегментов.
 - Выполнена сегментация по recency и исторической выручке.
-- Выделены high-value inactive customers как потенциальный сегмент для reactivation.
+- Выделены клиенты с высокой исторической ценностью и длительным отсутствием покупок как потенциальный сегмент для реактивации.
 
 ### Revenue concentration
 - Рассчитана накопительная доля выручки с помощью SQL window functions.
@@ -79,9 +79,11 @@
 
 Python, pandas, DuckDB, SQL, seaborn, matplotlib, Jupyter Notebook
 
-## Структура
+## Структура проекта
 
+```text
 retail-funnel-retention/
 ├── funnel_retention.ipynb
 ├── online_retail_II.csv
 └── README.md
+```
