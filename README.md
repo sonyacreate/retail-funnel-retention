@@ -176,9 +176,12 @@
 
 ```
 retail-funnel-retention/
-├── funnel_retention.ipynb
-├── online_retail_II.csv
+├── retention_revenue_analysis.ipynb
+├── sql/
+│   └── customer_metrics.sql
 └── README.md
 ```
 
-> Dataset не стоит хранить в GitHub, если файл слишком большой для репозитория. В таком случае его лучше скачать из источника и положить локально в ожидаемый путь перед запуском notebook.
+> Исходный CSV не хранится в репозитории. Скачайте **Online Retail II** из источника данных и положите файл локально как `online_retail_II.csv` перед запуском notebook.
+
+Notebook содержит полный exploratory-анализ, а `sql/customer_metrics.sql` — вынесенные SQL-запросы для customer-level аналитики.
